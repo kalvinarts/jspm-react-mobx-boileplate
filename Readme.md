@@ -1,3 +1,2 @@
-# Virtual busines Cards App
+# JSPM + React + react-router + material-ui + mobx
 
-An application to serve and edit business cards
