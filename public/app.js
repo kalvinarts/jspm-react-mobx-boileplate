@@ -8,9 +8,6 @@ import CompaniesListView from 'components/CompaniesListView'
 import NoMatchView from 'components/NoMatchView'
 
 class Application extends Component {
-  constructor (props) {
-    super(props);
-  }
   render () {
     return (
       <Router history={browserHistory}>

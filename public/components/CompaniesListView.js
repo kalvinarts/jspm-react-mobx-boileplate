@@ -3,17 +3,17 @@ import { observer } from 'mobx-react';
 
 @observer
 class CompaniesListView extends Component {
-  constructor (props) {
-    super(props)
+  renderCompanies() {
+    return this.props.companies.map(company => {
+      return <div key={company.name}>{company.name}</div>;
+    });
   }
+
   render () {
-    let empty = ""
-    if (!this.props.companies.length) empty = "NO DATA";
+    let empty = this.props.companies.length ? "" : "NO DATA";
     return (
       <div className="CompaniesList">
-        {this.props.companies.map(company => {
-          return <div key={company.name}>{company.name}</div>;
-        })}
+        {this.renderCompanies()}
         {empty}
       </div>
     );

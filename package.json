@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "jspm install",
     "start": "npm run serve & npm run watch",
     "serve": "browser-sync start --config bs-config.js",
     "watch": "chokidar-socket-emitter",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.2",
-    "chokidar-socket-emitter": "^0.5.4"
+    "chokidar-socket-emitter": "^0.5.4",
+    "jspm": "^0.16.48"
   }
 }
